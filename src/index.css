@@ -1,0 +1,141 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.App{
+  width:100vw;
+  height:100vh;
+  margin: 0;
+  
+  
+}
+.head{
+  border-bottom: 1px solid black;
+  margin-bottom: 16px;
+  padding: 3px;
+  background-color:rgb(170, 67, 84);
+}
+.heading{
+  color: antiquewhite;
+  font-weight: 800;
+  margin-left: 20px;
+  font-size:20px;
+
+}
+
+.add{
+  display: flex;
+  justify-content: center;
+}
+
+input{
+  padding: 10px;
+  border:none;
+  border-bottom:1px solid rgb(170, 67, 84);
+  font-weight: 700;
+  text-transform: uppercase;
+}
+span{
+  padding:10px;
+  background-color:rgb(170, 67, 84) ;
+  color:whitesmoke;
+  font-size: 20px;
+  margin-left: 10px;
+  cursor: pointer;
+  font-weight: 700;
+  text-transform: uppercase;
+
+}
+.parent{
+  display: flex;
+  justify-content: center;
+  
+}
+.completed{
+  
+  margin: 40px;
+  width: 350px;
+}
+.todos{
+  
+  margin: 40px;
+  height: fit-content;
+}
+.item{
+  
+  background-color:rgb(214, 208, 209) ;
+  box-shadow: .5px .5px 2px 2px rgb(160, 87, 99);
+  padding: 20px;
+  margin:2%;
+  text-align: center;
+  width: 300px;
+  
+}
+.info,.btn{
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+  transform: translateY(-20px);
+}
+.item-name{
+  font-size: 20px;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-family: cursive;
+
+}
+.item-date{
+  color:blue;
+  font-family: cursive;
+}
+.item-status{
+  color: crimson;
+  font-family: cursive;
+}
+.remove-btn{
+  background-color:rgb(170, 67, 84) ;
+  border: none;
+  padding:10px;
+  color: whitesmoke;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+.edit-btn{
+  border:1px solid rgb(170, 67, 84);
+  padding:10px;
+  color: rgb(170, 67, 84);
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+.done-btn{
+  background-color:rgb(170, 67, 84) ;
+  border: none;
+  padding:10px;
+  color: whitesmoke;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+.remove-btn:hover,.done-btn:hover,span:hover{
+  background-color: rgb(174, 106, 118);
+}
+.edit-btn:hover{
+  background-color:rgb(170, 67, 84) ;
+  border: none;
+  color: whitesmoke;
+}
+.loader{
+  
+    border: 16px solid #f3f3f3; /* Light grey */
+    border-top: 16px solid rgb(170, 67, 84) ; /* Blue */
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    animation: spin 2s linear infinite;
+  }
+
