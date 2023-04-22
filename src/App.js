@@ -9,11 +9,11 @@ function App() {
   const[list,setList]=useState([]);
   const[isUpdate,setisUpdate]=useState(false);
   const[todoid,setTodoid]=useState("");
-  const[loading,setLoading]=useState(false)
+  
 
   useEffect(()=>{
    
-    getAllList(setList,setLoading);
+    getAllList(setList);
     
   },[])
 
